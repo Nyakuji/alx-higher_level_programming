@@ -22,4 +22,7 @@ Project done during **Full Stack Software Engineering program** at ***Alx-Africa
 |7-edges.py	|Prints some letters of a string
 |8-concat_edges.py    |	Prints some parts of a string
 |9-easter_egg.py    |   Prints "The Zen of Python"
-|10-check_cycle.c  |	C program that finds a loop in a linked list
+|10-check_cycle.c  |	C program that checks if a singly linked list has a cycle in it
+|100-write.py|	Python script that prints a message with write sys
+|101-compile|	Shell script that compiles a Python file
+|102-magic_calculation.py|	Python function that does exactly the same as a given disassembler
