@@ -11,7 +11,7 @@ Project done during **Full Stack Software Engineering program** at ***Alx-Africa
 
 ### **Files**
 
-|Filename|	|    Description|
+|Filename  |  Description        |
 |---------|---------------------|
 |0-positive_or_negative.py|	Prints if a number is positive, zero or negative
 |1-last_digit.py|	Prints the last digit of a random number
