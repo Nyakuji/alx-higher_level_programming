@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-def number_keys(a_dictionary):
-    number = 0
-    list_keys = list(a_dictionary.keys())
-
-    for i in list_keys:
-        number += 1
-
-    return (number)
+def print_sorted_dictionary(a_dictionary):
+    for k, v in sorted(a_dictionary.items()):
+        print(k, end=": ")
+        print(v)
