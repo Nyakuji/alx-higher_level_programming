@@ -17,3 +17,5 @@ Project done during **Full Stack Software Engineering program** at ***Alx-Africa
 |4-list_division.py|	Function that divides element by element 2 lists
 |5-raise_exception.py|	Function that raises a type exception
 |6-raise_exception.py|	Function that raises a name exception with a message
+|100-safe_print_integer_err.py| Function that prints an integer
+|101-safe_function.py|	Function that executes a function safely
