@@ -3,7 +3,7 @@
 
 
 class Square:
-    """ Square class defined by : (based on 3-square.py)
+    """ Square class defined by : (based on 4-square.py)
 
         Attributes:(private)
             size (int): Size of square
@@ -51,3 +51,13 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
+
+    def my_print(self):
+        """
+        print a square from the size using #
+        """
+        if self.__size == 0:
+            print()
+        else:
+            for x in range(self.size):
+                print("#" * self.size)
