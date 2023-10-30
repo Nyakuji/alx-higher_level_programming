@@ -7,13 +7,17 @@
 
 class Rectangle:
     """
-        Rectangle Class that defines a rectangle by:(based on 4-rectangle.py)
+        Rectangle Class that defines a rectangle by: (based on 8-rectangle.py)
 
         Attribute:
-            width (int): Private
-            height (int) : Private
-
+            width (int): Private instance attr
+            height (int) : Private instance attr
+            number_of_instances (int) : Public Class attribute
+            print_symbol (any type): Public Class attribute
         """
+    number_of_instances = 0
+    print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         """
             Init Rectangle Class
@@ -24,6 +28,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -102,7 +107,8 @@ class Rectangle:
             """
         if self.__width == 0 or self.__height == 0:
             return ""
-        return (('#'*self.__width + "\n")*self.__height)[:-1]
+        sy = str(self.print_symbol)
+        return ((sy*self.__width + "\n")*self.__height)[:-1]
 
     def __repr__(self):
         """
@@ -117,4 +123,39 @@ class Rectangle:
         """
             Print message when instances deleted
         """
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """
+            compare 2 rectangle
+        Args:
+            rect_1(Rectangle): First Rectangle
+            rect_2(Rectangle): Second Rectangle
+        Raises:
+            TypeError: If rect_1 is not instance of Rectangle
+            TypeError: If rect_2 is not instance of rectangle
+        Return:
+            Biggest Rectangle (Rectangle)
+        """
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        Area1 = rect_1.area()
+        Area2 = rect_2.area()
+        if Area1 >= Area2:
+            return rect_1
+        return rect_2
+
+    @classmethod
+    def square(cls, size=0):
+        """
+        Make a square from a rectangle
+        Args:
+            size (int): the size of the square
+        Returns:
+            (Rectangle): instance of rectangle
+        """
+        return cls(size, size)
