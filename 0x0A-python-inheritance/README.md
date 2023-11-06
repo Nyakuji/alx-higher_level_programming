@@ -24,3 +24,5 @@ Project done during **Full Stack Software Engineering Program** at ***Alx-Africa
 |9-rectangle.py|	Class Rectangle that inhertis from BaseGeometry, with area() method implemented
 |10-square.py|	Class Square that inherits from Rectangle
 |11-square.py|	Class Square that inherits from Rectangle, with str() method
+|100-my_int.py|	Class MyInt that inhertis from int. Its == and != operators are inverted
+|101-add_attribute.py|	Function that adds a new attribute to an object if it's possible
