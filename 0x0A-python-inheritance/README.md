@@ -1,6 +1,6 @@
 # **0x0A. Python - Inheritance**
 
-Project done during **Full Stack Software Engineering Program** at ***Alx-Africa***. It aims to learn about** inheritance, superclass, baseclass and subclass** in **Python**.
+Project done during **Full Stack Software Engineering Program** at ***Alx-Africa***. It aims to learn about **inheritance, superclass, baseclass and subclass** in **Python**.
 
 ## **Technologies and Requirements**
 - Interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
