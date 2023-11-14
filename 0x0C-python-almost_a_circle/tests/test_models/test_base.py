@@ -2,7 +2,9 @@
 """module for test base class"""
 import unittest
 import json
-from models.base import Base 
+from models.base import Base
+
+
 class TestBase(unittest.TestCase):
     """Tests for the Base class"""
 
@@ -61,7 +63,10 @@ class TestBase(unittest.TestCase):
         self.assertIsInstance(json_l, list)
         self.assertEqual(len(json_l), 2)
         self.assertIsInstance(json_l[0], dict)
-        self.assertEqual(json_l[0], {"id": 9, "width": 5, "height": 6, "x": 7, "y": 8})
+        self.assertEqual(
+            json_l[0],
+            {"id": 9, "width": 5, "height": 6, "x": 7, "y": 8}
+            )
 
     def test_from_json_string_empty(self):
         """Test from_json_string with an empty string"""
