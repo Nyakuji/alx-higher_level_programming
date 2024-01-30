@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-# Script that Write a function that finds a peak in a list of unsorted integers.
+"""Script that Write a function that finds a peak in a list of unsorted integers."""
 def find_peak(list_of_integers):
+    """finding peak"""
     if not list_of_integers:
         return None  # Return None for an empty list
 
